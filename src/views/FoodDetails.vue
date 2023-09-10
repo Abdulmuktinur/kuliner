@@ -91,7 +91,7 @@ export default {
         this.pesan.products = this.product;
         axios
           .post(
-            "http://localhost:3000/keranjangs",
+            "https://my-json-server.typicode.com/Abdulmuktinur/json-server-vue/keranjangs",
             this.pesan
           )
           .then(() => {
@@ -117,7 +117,7 @@ export default {
   mounted() {
     axios
       .get(
-        "http://localhost:3000/products/" +
+        "https://my-json-server.typicode.com/Abdulmuktinur/json-server-vue/products/" +
           this.$route.params.id
       )
       .then((response) => this.setProduct(response.data))

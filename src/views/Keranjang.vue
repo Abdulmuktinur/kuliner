@@ -145,7 +145,7 @@ export default {
     hapusKeranjang(id) {
       axios
         .delete(
-          "http://localhost:3000/keranjangs/" +
+          "https://my-json-server.typicode.com/Abdulmuktinur/json-server-vue/keranjangs/" +
             id
         )
         .then(() => {
@@ -159,7 +159,7 @@ export default {
           // update data keranjang
           axios
             .get(
-              "http://localhost:3000/keranjangs"
+              "https://my-json-server.typicode.com/Abdulmuktinur/json-server-vue/keranjangs"
             )
             .then((response) => this.setKeranjangs(response.data))
             .catch((error) => console.log(error));
@@ -172,7 +172,7 @@ export default {
 
         axios
           .post(
-            "http://localhost:3000/pesanans",
+            "https://my-json-server.typicode.com/Abdulmuktinur/json-server-vue/pesanans",
             this.pesan
           )
           .then(() => {
@@ -180,7 +180,7 @@ export default {
             this.keranjangs.map(function (item) {
               return axios
                 .delete(
-                  "http://localhost:3000/keranjangs/" +
+                  "https://my-json-server.typicode.com/Abdulmuktinur/json-server-vue/keranjangs/" +
                     item.id
                 )
                 .catch((error) => console.log(error));
@@ -208,7 +208,7 @@ export default {
   mounted() {
     axios
       .get(
-        "http://localhost:3000/keranjangs"
+        "https://my-json-server.typicode.com/Abdulmuktinur/json-server-vue/keranjangs"
       )
       .then((response) => this.setKeranjangs(response.data))
       .catch((error) => console.log(error));

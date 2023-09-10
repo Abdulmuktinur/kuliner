@@ -57,7 +57,7 @@ export default {
   },
   mounted() {
     axios
-      .get("http://localhost:3000/keranjangs")
+      .get("https://my-json-server.typicode.com/Abdulmuktinur/json-server-vue/keranjangs")
       .then((response) => this.setJumlah(response.data))
       .catch((error) => console.log(error));
   },
