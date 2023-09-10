@@ -1,0 +1,59 @@
+:root {
+  --primary-color: #4eb883;
+}
+#app {
+  font-family: "Poppins", sans-serif;
+}
+
+.card-product {
+  border-radius: 15px;
+}
+
+.card-img-top {
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+  height: 224px;
+  object-fit: fill;
+  overflow: hidden;
+}
+
+.router-link-exact-active {
+  font-weight: 500;
+}
+
+.fc {
+  color: var(--primary-color);
+}
+
+a.view-all {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+a.view-all:hover {
+  color: var(--primary-color);
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.btn-success {
+  background-color: #4eb883;
+}
+
+.badge-success {
+  background-color: #4eb883;
+}
+
+.breadcrumb {
+  background-color: transparent;
+  padding: 0;
+}
+
+.breadcrumb-item.active {
+  font-weight: 500;
+  color: black;
+}
+
+.img-fluid {
+  border-radius: 15px;
+}
