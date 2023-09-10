@@ -53,7 +53,7 @@ export default {
   },
   mounted() {
     axios
-      .get("https://my-json-server.typicode.com/Abdulmuktinur/json-server-vue/best-products")
+      .get("http://localhost:3000/best-products")
       .then((response) => {
         this.setProduct(response.data);
       })

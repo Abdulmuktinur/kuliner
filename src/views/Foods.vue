@@ -67,7 +67,7 @@ export default {
     searchFoods() {
       axios
         .get(
-          "https://my-json-server.typicode.com/Abdulmuktinur/json-server-vue/products?q=" +
+          "http://localhost:3000/products?q=" +
             this.search
         )
         .then((response) => {
@@ -82,7 +82,7 @@ export default {
   mounted() {
     axios
       .get(
-        "https://my-json-server.typicode.com/Abdulmuktinur/json-server-vue/products"
+        "http://localhost:3000/products"
       )
       .then((response) => {
         this.setProduct(response.data);
