@@ -53,7 +53,11 @@ export default {
   },
   mounted() {
     axios
-      .get("http://localhost:3000/best-products")
+      .get("http://localhost:3000/best-products", {
+        headers: {
+          'Access-Control-Allow-Origin': '*',
+        }
+      })
       .then((response) => {
         this.setProduct(response.data);
       })
